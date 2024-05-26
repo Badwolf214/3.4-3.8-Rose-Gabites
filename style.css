@@ -2,3 +2,33 @@ html {
   height: 100%;
   width: 100%;
 }
+
+@media screen and (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 'home heuristics quiz links';
+  }
+
+  .main {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+      'none none title none none'
+      'none none subitle none none'
+      'none paragraph paragraph paragraph none'
+      'none icon1 icon2 icon3 none';
+}
+
+  .footer {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+      'credits feedback none none';
+  }
+@media screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media screen and (max-width:480px) {}
