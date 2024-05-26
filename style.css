@@ -3,6 +3,7 @@ html {
   width: 100%;
 }
 
+/* ****** Desktop layout (max-width: 1024px) ****** */
 @media screen and (min-width: 1024px) {
   .header {
     display: grid;
@@ -17,10 +18,10 @@ html {
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas:
       'none none title none none'
-      'none none subitle none none'
+      'none none subtitle none none'
       'none paragraph paragraph paragraph none'
       'none icon1 icon2 icon3 none';
-}
+  }
 
   .footer {
     display: grid;
@@ -29,6 +30,66 @@ html {
     grid-template-areas:
       'credits feedback none none';
   }
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
 
-@media screen and (max-width:480px) {}
+  /* ****** Tablet layout (min-width: 768px max-width: 1023px) ****** */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas: 'home heuristics quiz links';
+    }
+
+    .main {
+      display: grid;
+      grid-template-rows: 25% 25% 25% 25%;
+      grid-template-columns: 33% 33% 33%;
+      grid-template-areas:
+        'none title none'
+        'none subtitle none'
+        'paragraph paragraph paragraph'
+        'icon1 icon2 icon3';
+    }
+
+    .footer {
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 25% 25% 25% 25%;
+      grid-template-areas:
+        'credits feedback none none';
+    }
+  }
+
+  /* ****** Mobile layout (max-width: 480px) ****** */
+  @media screen and (max-width:480px) {
+    .header {
+      display: grid;
+      grid-template-rows: 50% 50%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        'home heuristics'
+        'quiz links';
+    }
+
+    .main {
+      display: grid;
+      grid-template-rows: 16% 16% 16% 16% 16% 16%;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-areas:
+        'none title none'
+        'none subtitle none'
+        'paragraph paragraph paragraph'
+        'none icon1 none'
+        'none icon2 none'
+        'none icon3 none';
+    }
+
+    .footer {
+      display: grid;
+      grid-template-rows: 100%;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        'credits feedback';
+    }
+  }
+}
