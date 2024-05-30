@@ -1,95 +1,110 @@
 html {
   height: 100%;
   width: 100%;
+  margin: 0px;
 }
 
-/* ****** Desktop layout (max-width: 1024px) ****** */
-@media screen and (min-width: 1024px) {
-  .header {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'home heuristics quiz links';
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 0;
+  background-color: lightblue;
+  justify-content: center;
+  grid-gap: 0px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  background-color: lightgreen;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  padding: 0;
+  background-color: firebrick;
+}
+
+.homeTitle {
+  grid-column: 1 / span 5;
+  background-color: hotpink;
+  text-align: center;
+}
+
+.homeSubtitle {
+  grid-column: 2 / 5;
+  background-color: blue;
+  text-align: center;
+  grid-row: 2;
+}
+
+.homeParagraph {
+  grid-column: 1 / span 5;
+  background-color: chartreuse;
+  text-align: center;
+  grid-row: 3;
+}
+
+.icon1 {
+  grid-column: 2;
+  background-color: fuchsia;
+  text-align: center;
+  grid-row: 4;
+}
+
+.icon2 {
+  grid-column: 3;
+  background-color: lightyellow;
+  text-align: center;
+  grid-row: 4;
+}
+
+.icon3 {
+  grid-column: 4;
+  background-color: navy;
+  text-align: center;
+  grid-row: 4;
+}
+
+.imageCredits {
+  grid-column: 1;
+  background-color: navy;
+  text-align: center;
+
+}
+
+.feedback {
+  grid-column: 2;
+  background-color: rosybrown;
+  text-align: center;
+}
+
+/* ****** Styles for elements ****** */
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
   }
 
-  .main {
-    display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-areas:
-      'none none title none none'
-      'none none subtitle none none'
-      'none paragraph paragraph paragraph none'
-      'none icon1 icon2 icon3 none';
+  
+}
+
+@media only screen and (min-width:600px) {
+  body {
+    background-color: orange;
   }
+}
 
-  .footer {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas:
-      'credits feedback none none';
-  }
 
-  /* ****** Tablet layout (min-width: 768px max-width: 1023px) ****** */
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .header {
-      display: grid;
-      grid-template-rows: 100%;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-areas: 'home heuristics quiz links';
-    }
 
-    .main {
-      display: grid;
-      grid-template-rows: 25% 25% 25% 25%;
-      grid-template-columns: 33% 33% 33%;
-      grid-template-areas:
-        'none title none'
-        'none subtitle none'
-        'paragraph paragraph paragraph'
-        'icon1 icon2 icon3';
-    }
-
-    .footer {
-      display: grid;
-      grid-template-rows: 100%;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-areas:
-        'credits feedback none none';
-    }
-  }
-
-  /* ****** Mobile layout (max-width: 480px) ****** */
-  @media screen and (max-width:480px) {
-    .header {
-      display: grid;
-      grid-template-rows: 50% 50%;
-      grid-template-columns: 50% 50%;
-      grid-template-areas:
-        'home heuristics'
-        'quiz links';
-    }
-
-    .main {
-      display: grid;
-      grid-template-rows: 16% 16% 16% 16% 16% 16%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-      grid-template-areas:
-        'none title none'
-        'none subtitle none'
-        'paragraph paragraph paragraph'
-        'none icon1 none'
-        'none icon2 none'
-        'none icon3 none';
-    }
-
-    .footer {
-      display: grid;
-      grid-template-rows: 100%;
-      grid-template-columns: 50% 50%;
-      grid-template-areas:
-        'credits feedback';
-    }
+@media only screen and (min-width:1200px) {
+  body {
+    background-color: blue;
   }
 }
