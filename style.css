@@ -5,12 +5,91 @@ html {
 }
 
 
+
+
 /* ****** MOBILE Max width: 600px****** */
 @media only screen and (max-width: 600px) {
   body {
     background-color: red;
   }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0;
+    background-color: lightblue;
+    justify-content: center;
+    grid-gap: 0px;
+  }
 
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    grid-gap: 0px;
+    background-color: lightgreen;
+  }
+
+  .footer {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .homeTitle {
+    grid-column: 2;
+    background-color: hotpink;
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .homeSubtitle {
+    grid-column: 2;
+    background-color: blue;
+    text-align: center;
+    grid-row: 2;
+  }
+
+  .homeParagraph {
+    grid-column: 1 / span 3;
+    background-color: chartreuse;
+    text-align: center;
+    grid-row: 3;
+  }
+
+  .icon1 {
+    grid-column: 2;
+    background-color: fuchsia;
+    text-align: center;
+    grid-row: 4;
+  }
+
+  .icon2 {
+    grid-column: 2;
+    background-color: lightyellow;
+    text-align: center;
+    grid-row: 5;
+  }
+
+  .icon3 {
+    grid-column: 2;
+    background-color: navy;
+    text-align: center;
+    grid-row: 6;
+  }
+
+  .imageCredits {
+    grid-column: 1;
+    background-color: navy;
+    text-align: center;
+  }
+
+  .feedback {
+    grid-column: 2;
+    background-color: rosybrown;
+    text-align: center;
+  }
 
 }
 
@@ -32,12 +111,14 @@ html {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
+    grid-gap: 0px;
     background-color: lightgreen;
   }
 
   .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .homeTitle {
@@ -83,13 +164,13 @@ html {
   }
 
   .imageCredits {
-    grid-column: 1 / span 2;
+    grid-column: 1;
     background-color: navy;
     text-align: center;
   }
 
   .feedback {
-    grid-column: 3 / span 4;
+    grid-column: 2;
     background-color: rosybrown;
     text-align: center;
   }
