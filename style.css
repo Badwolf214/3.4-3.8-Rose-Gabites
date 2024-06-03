@@ -2,22 +2,22 @@ html {
   height: 100%;
   width: 100%;
   margin: 0px;
+
 }
-
-
 
 
 /* ****** MOBILE Max width: 600px****** */
 @media only screen and (max-width: 600px) {
   body {
     background-color: red;
+    grid-gap: 0px;
+
   }
+
   .header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding: 0;
-    background-color: lightblue;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     justify-content: center;
     grid-gap: 0px;
   }
@@ -36,7 +36,85 @@ html {
     grid-gap: 0px;
     grid-template-columns: 1fr 1fr;
   }
+
+  .homeNav {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #1C4670;
+    font-size: 200%;
+  }
+  .heuristicsNav {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #278AB0;
+    font-size: 200%;
+  }
+  .quizNav {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #278AB0;
+    font-size: 200%;
+  }
   
+  .linksNav {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #278AB0;
+    font-size: 200%;
+  }
+
+  .navLink {
+    font-family: "Share Tech", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    font-size: 100%;
+  }
+
+  .navLink:hover {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    justify-items: stretch;
+    align-items: center;
+    color: #1DC690;
+    font-size: 100%;
+    i {
+      font-size:5vw;
+      color: #1DC690;
+    }
+  }
+  
+  i {
+    font-size:5vw;
+    color: #EAEAE0;
+  }
+
+
+
   .homeTitle {
     grid-column: 2;
     background-color: hotpink;
@@ -99,12 +177,20 @@ html {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 0;
-    background-color: lightblue;
+    grid-template-rows: 1fr;
     justify-content: center;
     grid-gap: 0px;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #278AB0;
+    font-size: 3em;
   }
+
 
   .main {
     display: grid;
@@ -186,11 +272,16 @@ html {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    padding: 0;
-    background-color: lightblue;
-    justify-content: center;
     grid-gap: 0px;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.25em;
+    justify-items: stretch;
+    align-items: center;
+    color: #EAEAE0;
+    background-color: #278AB0;
+    font-size: 3em;
   }
 
   .main {
