@@ -1,4 +1,4 @@
-html {
+html body {
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -9,8 +9,8 @@ html {
 /* ****** MOBILE Max width: 600px****** */
 @media only screen and (max-width: 600px) {
   body {
+    display: grid;
     background-color: red;
-    grid-gap: 0px;
 
   }
 
@@ -19,7 +19,9 @@ html {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
-    grid-gap: 0px;
+    text-align: center;
+    background-color: #278AB0;
+    padding:0.5em;
   }
 
   .main {
@@ -27,63 +29,18 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
-    grid-gap: 0px;
+
     background-color: lightgreen;
   }
 
   .footer {
     display: grid;
-    grid-gap: 0px;
+
     grid-template-columns: 1fr 1fr;
   }
 
-  .homeNav {
-    font-family: "Share Tech", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0.25em;
-    justify-items: stretch;
-    align-items: center;
-    color: #EAEAE0;
-    background-color: #1C4670;
-    font-size: 200%;
-  }
-  .heuristicsNav {
-    font-family: "Share Tech", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0.25em;
-    justify-items: stretch;
-    align-items: center;
-    color: #EAEAE0;
-    background-color: #278AB0;
-    font-size: 200%;
-  }
-  .quizNav {
-    font-family: "Share Tech", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0.25em;
-    justify-items: stretch;
-    align-items: center;
-    color: #EAEAE0;
-    background-color: #278AB0;
-    font-size: 200%;
-  }
-  
-  .linksNav {
-    font-family: "Share Tech", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 0.25em;
-    justify-items: stretch;
-    align-items: center;
-    color: #EAEAE0;
-    background-color: #278AB0;
-    font-size: 200%;
-  }
-
   .navLink {
+    display: grid;
     font-family: "Share Tech", sans-serif;
     text-decoration: none;
     font-weight: 400;
@@ -91,33 +48,33 @@ html {
     justify-items: stretch;
     align-items: center;
     color: #EAEAE0;
-    font-size: 100%;
+    font-size: 1.5em;
+
   }
 
   .navLink:hover {
+    display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
     text-decoration: underline;
     justify-items: stretch;
     align-items: center;
     color: #1DC690;
-    font-size: 100%;
+    font-size: 1.5em;
     i {
-      font-size:5vw;
+      font-size: 1.5em;
       color: #1DC690;
+      text-decoration:none;
     }
   }
-  
+
   i {
-    font-size:5vw;
+    font-size: 1.5em;
     color: #EAEAE0;
+    text-decoration:none;
   }
-
-
-
   .homeTitle {
     grid-column: 2;
-    background-color: hotpink;
     text-align: center;
     grid-row: 1;
   }
@@ -179,31 +136,74 @@ html {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
-    grid-gap: 0px;
+    text-align: center;
+    background-color: #278AB0;
+    padding:0.5em;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+
+    background-color: lightgreen;
+  }
+
+  .footer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navLink {
+    display: grid;
     font-family: "Share Tech", sans-serif;
+    text-decoration: none;
     font-weight: 400;
     font-style: normal;
-    padding: 0.25em;
     justify-items: stretch;
     align-items: center;
     color: #EAEAE0;
-    background-color: #278AB0;
-    font-size: 3em;
+    font-size: 1.5em;
+
   }
+
+  .navLink:hover {
+    display: grid;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    justify-items: stretch;
+    align-items: center;
+    color: #1DC690;
+    font-size: 1.5em;
+
+    i {
+      font-size: 1.5em;
+      color: #1DC690;
+      text-decoration:none;
+    }
+  }
+
+  i {
+    font-size: 1.5em;
+    color: #EAEAE0;
+    text-decoration:none;
+  }
+
 
 
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 0;
-    grid-gap: 0px;
     background-color: lightgreen;
   }
 
   .footer {
     display: grid;
-    grid-gap: 0px;
+
     grid-template-columns: 1fr 1fr;
   }
 
@@ -272,16 +272,79 @@ html {
   .header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0px;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    text-align: center;
+    background-color: #278AB0;
+    padding:0.5em;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: lightgreen;
+  }
+
+  .footer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navLink {
+    display: grid;
     font-family: "Share Tech", sans-serif;
+    text-decoration: none;
     font-weight: 400;
     font-style: normal;
-    padding: 0.25em;
     justify-items: stretch;
     align-items: center;
     color: #EAEAE0;
-    background-color: #278AB0;
-    font-size: 3em;
+    font-size: 1.5em;
+
+  }
+
+  .navLink:hover {
+    display: grid;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    text-decoration: underline;
+    justify-items: stretch;
+    align-items: center;
+    color: #1DC690;
+    font-size: 1.5em;
+
+    i {
+      font-size: 1.5em;
+      color: #1DC690;
+      text-decoration:none;
+    }
+  }
+
+  i {
+    font-size: 1.5em;
+    color: #EAEAE0;
+    text-decoration:none;
+  }
+  .homeTitle {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 1;
+  }
+
+  .homeSubtitle {
+    grid-column: 2;
+    background-color: blue;
+    text-align: center;
+    grid-row: 2;
+  }
+
+  .homeParagraph {
+    grid-column: 1 / span 3;
+    background-color: chartreuse;
+    text-align: center;
+    grid-row: 3;
   }
 
   .main {
@@ -295,8 +358,6 @@ html {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    padding: 0;
     background-color: firebrick;
   }
 
