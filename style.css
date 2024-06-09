@@ -10,7 +10,7 @@ html body {
 @media only screen and (max-width: 600px) {
   body {
     display: grid;
-    background-color: red;
+
 
   }
 
@@ -21,16 +21,17 @@ html body {
     justify-content: center;
     text-align: center;
     background-color: #278AB0;
-    padding:0.5em;
+    padding: 0.5em;
   }
 
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    padding: 0;
-
-    background-color: lightgreen;
+    grid-template-rows: 1fr 0.25fr 1fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #EAEAE0;
   }
 
   .footer {
@@ -61,72 +62,139 @@ html body {
     align-items: center;
     color: #1DC690;
     font-size: 1.5em;
-    i {
+
+    .navLink>i {
       font-size: 1.5em;
       color: #1DC690;
-      text-decoration:none;
+      text-decoration: none;
     }
   }
 
-  i {
+  .navlink>i {
     font-size: 1.5em;
     color: #EAEAE0;
-    text-decoration:none;
+    text-decoration: none;
   }
+
   .homeTitle {
     grid-column: 2;
     text-align: center;
     grid-row: 1;
-  }
-
-  .homeSubtitle {
-    grid-column: 2;
-    background-color: blue;
-    text-align: center;
-    grid-row: 2;
-  }
-
-  .homeParagraph {
-    grid-column: 1 / span 3;
-    background-color: chartreuse;
-    text-align: center;
-    grid-row: 3;
-  }
-
-  .icon1 {
-    grid-column: 2;
-    background-color: fuchsia;
-    text-align: center;
-    grid-row: 4;
-  }
-
-  .icon2 {
-    grid-column: 2;
-    background-color: lightyellow;
-    text-align: center;
-    grid-row: 5;
-  }
-
-  .icon3 {
-    grid-column: 2;
-    background-color: navy;
-    text-align: center;
-    grid-row: 6;
-  }
-
-  .imageCredits {
-    grid-column: 1;
-    background-color: navy;
-    text-align: center;
-  }
-
-  .feedback {
-    grid-column: 2;
-    background-color: rosybrown;
-    text-align: center;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    padding-top: 0.75em;
+    color: #1DC690;
   }
 
 }
+
+.homeSubtitle {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 2;
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #1C4670;
+
+}
+
+.homeParagraph {
+  grid-column: 1 / span 3;
+  text-align: center;
+  grid-row: 3;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 1.5em;
+  color: #1C4670;
+}
+
+.iconCircle {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 4;
+  height: 9em;
+  width: 9em;
+  background-color: #1DC690;
+  align-content: center;
+  border-radius: 50%;
+}
+
+.iconCircle > i {
+  font-size: 4em;
+  color: #1C4670;
+  text-decoration: none;
+
+}
+
+#icon1 {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 4;
+}
+
+
+#icon2 {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 6;
+}
+
+#icon3 {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 8;
+}
+
+.iconText {
+font-family: "Monda", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1.5em;
+color: #1C4670;
+}
+
+#heuristics {
+  grid-row: 5;
+  grid-column: 2;
+  text-align: center;
+  padding-bottom: 2em;
+
+}
+
+#quiz {
+  grid-row: 7;
+  grid-column: 2;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#links {
+  grid-row: 9;
+  grid-column: 2;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.imageCredits {
+  grid-column: 1;
+  background-color: navy;
+  text-align: center;
+}
+
+.feedback {
+  grid-column: 2;
+  background-color: rosybrown;
+  text-align: center;
+}
+
+
 
 
 /* ****** TABLET Min width: 600px****** */
@@ -138,7 +206,7 @@ html body {
     justify-content: center;
     text-align: center;
     background-color: #278AB0;
-    padding:0.5em;
+    padding: 0.5em;
   }
 
   .main {
@@ -182,14 +250,14 @@ html body {
     i {
       font-size: 1.5em;
       color: #1DC690;
-      text-decoration:none;
+      text-decoration: none;
     }
   }
 
   i {
     font-size: 1.5em;
     color: #EAEAE0;
-    text-decoration:none;
+    text-decoration: none;
   }
 
 
@@ -276,7 +344,7 @@ html body {
     justify-content: center;
     text-align: center;
     background-color: #278AB0;
-    padding:0.5em;
+    padding: 0.5em;
   }
 
   .main {
@@ -318,15 +386,16 @@ html body {
     i {
       font-size: 1.5em;
       color: #1DC690;
-      text-decoration:none;
+      text-decoration: none;
     }
   }
 
   i {
     font-size: 1.5em;
     color: #EAEAE0;
-    text-decoration:none;
+    text-decoration: none;
   }
+
   .homeTitle {
     grid-column: 2;
     text-align: center;
