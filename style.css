@@ -1,18 +1,14 @@
-html body {
-  height: 100%;
+html, body {
+  height: 100vh;
   width: 100%;
   margin: 0px;
-
+  display:grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 
 /* ****** MOBILE Max width: 600px****** */
 @media only screen and (max-width: 600px) {
-  body {
-    display: grid;
-
-
-  }
 
   .header {
     display: grid;
@@ -36,8 +32,11 @@ html body {
 
   .footer {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #1DC690;
   }
 
   .navLink {
@@ -62,8 +61,9 @@ html body {
     align-items: center;
     color: #1DC690;
     font-size: 1.5em;
+    cursor: pointer;
 
-    .navLink>i {
+    .navLink > i {
       font-size: 1.5em;
       color: #1DC690;
       text-decoration: none;
@@ -182,11 +182,7 @@ color: #1C4670;
   padding-bottom: 2em;
 }
 
-.imageCredits {
-  grid-column: 1;
-  background-color: navy;
-  text-align: center;
-}
+
 
 .feedback {
   grid-column: 2;
@@ -194,7 +190,42 @@ color: #1C4670;
   text-align: center;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+}
 
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 /* ****** TABLET Min width: 600px****** */
@@ -209,18 +240,25 @@ color: #1C4670;
     padding: 0.5em;
   }
 
+
+
   .main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     padding: 0;
-
-    background-color: lightgreen;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #EAEAE0;
   }
 
   .footer {
     display: grid;
-
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #1DC690;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -234,7 +272,6 @@ color: #1C4670;
     align-items: center;
     color: #EAEAE0;
     font-size: 1.5em;
-
   }
 
   .navLink:hover {
@@ -246,6 +283,7 @@ color: #1C4670;
     align-items: center;
     color: #1DC690;
     font-size: 1.5em;
+    cursor: pointer;
 
     i {
       font-size: 1.5em;
@@ -260,66 +298,81 @@ color: #1C4670;
     text-decoration: none;
   }
 
-
-
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    background-color: lightgreen;
-  }
-
-  .footer {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-  }
-
   .homeTitle {
     grid-column: 2 / 4;
-    background-color: hotpink;
     text-align: center;
     grid-row: 1;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    padding-top: 0.75em;
+    color: #1DC690;
   }
 
   .homeSubtitle {
     grid-column: 2 / 4;
-    background-color: blue;
     text-align: center;
     grid-row: 2;
   }
 
   .homeParagraph {
     grid-column: 1 / span 5;
-    background-color: chartreuse;
     text-align: center;
     grid-row: 3;
   }
 
-  .icon1 {
+  #icon1 {
     grid-column: 2;
-    background-color: fuchsia;
     text-align: center;
     grid-row: 4;
   }
 
-  .icon2 {
+  #icon2 {
     grid-column: 3;
-    background-color: lightyellow;
     text-align: center;
     grid-row: 4;
   }
 
-  .icon3 {
+  #icon3 {
     grid-column: 2;
-    background-color: navy;
     text-align: center;
+    grid-row: 6;
+  }
+
+  .iconText {
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1em;
+  color: #1C4670;
+  text-align: center;
+  }
+
+  #heuristics {
     grid-row: 5;
+    grid-column: 2;
+    padding-bottom: 2em;
+
+  }
+
+  #quiz {
+    grid-row: 5;
+    grid-column: 3;
+    text-align: center;
+    padding-bottom: 2em;
+  }
+
+  #links {
+    grid-row: 7;
+    grid-column: 2;
+    text-align: center;
+    padding-bottom: 2em;
   }
 
   .imageCredits {
     grid-column: 1;
-    background-color: navy;
+
     text-align: center;
   }
 
@@ -382,6 +435,7 @@ color: #1C4670;
     align-items: center;
     color: #1DC690;
     font-size: 1.5em;
+    cursor: pointer;
 
     i {
       font-size: 1.5em;

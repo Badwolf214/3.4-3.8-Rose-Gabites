@@ -2,6 +2,7 @@
 <html>
 
 <head>
+        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Share+Tech&display=swap"
@@ -12,8 +13,9 @@
         <meta name="viewport" content="width=device-width">
         <title>HVHS Heuristics</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
-        <script src="quizCalc.js"></script>
+        
         <script src="https://kit.fontawesome.com/d04ca93c21.js" crossorigin="anonymous"></script>
+        
 </head>
 
 <body>
@@ -36,8 +38,9 @@
                         the Nielsen Norman Group. While most of this information is relevant to the Year 11 DCAT at
                         HVHS, this site is useful to just about anyone. Happy designing!</div>
 
-                <!--<a href="index.html"> Messes with my CSS grid placement, try and fix later-->
-                <div class="iconCircle" id="icon1"><i class="fa-solid fa-list"></i></div><!--</a>-->
+                <a href="index.html" class="iconCircle" id="icon1">
+                        <i class="fa-solid fa-list"></i>
+                </a>
                 <a class="iconText" id="heuristics" href="index.html">List Of Heuristics And Examples</a>
                 <div class="iconCircle" id="icon2"><i class="fa-solid fa-gamepad"></i></div>
                 <a class="iconText" id="quiz" href="index.html">Test Your Knowledge With A Quiz!</a>
@@ -46,10 +49,24 @@
         </div>
         <!--******* End Of Main/Beginning Of Footer *******-->
         <div class="footer">
-                <div class="imageCredits">Credits</div>
-                <div class="feedback">Feedback</div>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Some text in the Modal..</p>
+                  </div>
+
+                </div>
+
+                <div class="feedback"></div>
         </div>
         <!--******* End Of Footer *******-->
+        <script src="quizCalc.js"></script>
 </body>
 
 </html>
