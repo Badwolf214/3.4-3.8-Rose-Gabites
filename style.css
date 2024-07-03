@@ -7,6 +7,24 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
+.navlink {
+  font-family: "Share Tech", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-style: normal;
+  justify-items: stretch;
+  align-items: center;
+  color: #F8F4F9;
+}
+.homeTitle {
+  padding-bottom: 0;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #2589BD;
+  text-align:center;
+}
 .homeSubtitle {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -15,19 +33,36 @@ body {
   color: #2D3047;
 }
 
+.homeParagraph {
+  text-align: center;
+  color: #1C4670;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .iconText {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Source Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 1.2em;
   color: #2D3047;
-  padding-top: 8em;
+  margin-top:10em;
+  padding:0px;
+}
+
+.iconText:hover, .iconCircle:hover  {
+  color: #2589BD;
+  font-style:italic;
 }
 
 
 
+
+
 /* ****** SMALL SCREEN Max width: 600px****** */
+/* *** START GRID LAYOUT - S *** */
 @media only screen and (max-width: 600px) {
 
   .header {
@@ -56,8 +91,10 @@ body {
     place-items: center;
     background-color: #2D3047;
   }
-
-  .navLink {
+  /* *** END GRID LAYOUT - S *** */
+  
+  /* *** START HEADER - S *** */
+  .navLink /* regular link style */{
     display: grid;
     font-family: "Share Tech", sans-serif;
     text-decoration: none;
@@ -70,7 +107,7 @@ body {
 
   }
 
-  .navLink:hover {
+  .navLink:hover/* link on hover */ {
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -81,31 +118,26 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 
-    .navLink>i {
+    .navLink>i /* icon on hover */{
       font-size: 2.5em;
       color: #E6AF2E;
       text-decoration: none;
     }
   }
 
-  .navlink>i {
+  .navlink>i /* regular icon style */{
     font-size: 1.5em;
     color: #F8F4F9;
     text-decoration: none;
   }
+  /* *** END HEADER - S *** */
 
+  /* *** START TEXT - S *** */
   .homeTitle {
     grid-column: 1/5;
-    text-align: center;
     grid-row: 1;
-    font-size: 3em;
+    font-size: 2.5em;
     padding-top: 0.75em;
-    padding-bottom: 0;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: #2589BD;
   }
 
 }
@@ -118,16 +150,25 @@ body {
 
 .homeParagraph {
   grid-column: 1 / span 3;
-  text-align: center;
   grid-row: 3;
   font-size: 1.2em;
   padding: 1.5em;
-  color: #1C4670;
-  font-family: "Titillium Web", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
+/* *** END TEXT - S *** */
+
+/* *** START ICONS - S *** */
+.iconCircle:hover {
+  grid-column: 2;
+  text-align: center;
+  grid-row: 4;
+  height: 9em;
+  width: 9em;
+  background-color: #2589BD;
+  align-content: center;
+  border-radius: 50%;
+
+}
 .iconCircle {
   grid-column: 2;
   text-align: center;
@@ -143,8 +184,9 @@ body {
   font-size: 4em;
   color: #2D3047;
   text-decoration: none;
-
 }
+
+
 
 #icon1 {
   grid-column: 2;
@@ -165,12 +207,16 @@ body {
   grid-row: 6;
 }
 
+/* *** END ICONS - S *** */
+
+/* ***  START SUBITLES - S *** */
+
 
 #heuristics {
   grid-row: 4;
   grid-column: 2;
   text-align: center;
-  padding-bottom: 2em;
+
 
 }
 
@@ -178,53 +224,43 @@ body {
   grid-row: 5;
   grid-column: 2;
   text-align: center;
-  padding-bottom: 2em;
 }
 
 #links {
   grid-row: 6;
   grid-column: 2;
   text-align: center;
-  padding-bottom: 2em;
 }
 
 
+/* *** END SUBTITLES - S *** */
 
+/* ***  START FOOTER - S *** */
 .feedback {
   grid-column: 2;
-  background-color: rosybrown;
   text-align: center;
 }
 
 /* The Modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
@@ -241,9 +277,12 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+/* ***  END FOOTER - S *** */
 
+/* ***  END PAGE - S *** */
 
-/* ****** MEDIUM SCREEN Min width: 600px****** */
+/* ######## MEDIUM SCREEN Min width: 600px ######## */
+/* *** START GRID LAYOUT - M *** */
 @media only screen and (min-width:600px) {
   .header {
     display: grid;
@@ -277,6 +316,8 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  /* *** END GRID LAYOUT - M *** */
+
   .navLink {
     display: grid;
     font-family: "Share Tech", sans-serif;
@@ -289,7 +330,7 @@ body {
     font-size: 2.5em;
   }
 
-  .navLink:hover {
+  .navLink:hover /* link on hover */{
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -315,16 +356,9 @@ body {
 
   .homeTitle {
     grid-column: 1 / 5;
-    text-align: center;
     grid-row: 1;
-    font-family: "Orbitron", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 4em;
     margin: 0;
     padding-top: 1em;
-    color: #278AB0;
   }
 
   .homeSubtitle {
@@ -368,8 +402,7 @@ body {
   #heuristics {
     grid-row: 4;
     grid-column: 1 / 3;
-    padding-bottom: 2em;
-    padding-top: 8em;
+
     font-size: 1.5em;
   }
 
@@ -377,8 +410,6 @@ body {
     grid-row: 4;
     grid-column: 3 / 6;
     text-align: center;
-    padding-bottom: 2em;
-    padding-top: 8em;
     font-size: 1.5em;
   }
 
@@ -386,8 +417,6 @@ body {
     grid-row: 5;
     grid-column: 1 / 3;
     text-align: center;
-    padding-bottom: 2em;
-    padding-top: 8em;
     font-size: 1.5em;
   }
 
@@ -403,13 +432,11 @@ body {
     text-align: center;
   }
 
-  body {
-    background-color: orange;
-  }
 }
 
 
 /* ****** LARGE SCREEN Min width: 1200px****** */
+/* *** START GRID LAYOUT - L *** */
 @media only screen and (min-width:1200px) {
   .header {
     display: grid;
@@ -424,7 +451,7 @@ body {
   .main {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.5fr 0.25fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 0.7fr 1fr;
     padding: 0;
 
   }
@@ -433,22 +460,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  /* *** END GRID LAYOUT - L *** */
 
-
+  /* ***** START HEADER - L ***** */
   .navLink {
-    display: grid;
-    font-family: "Share Tech", sans-serif;
-    text-decoration: none;
-    font-weight: 400;
-    font-style: normal;
-    justify-items: stretch;
-    align-items: center;
-    color: #F8F4F9;
     font-size: 1.5em;
-
+    display:grid;
   }
 
-  .navLink:hover {
+  .navLink:hover /* link on hover */{
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -459,40 +479,41 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 
-    i {
+    i /* icons on hover */ {
       font-size: 1.5em;
       color: #E6AF2E;
       text-decoration: none;
     }
   }
 
-  i {
+  i /* regular icon styles */{
     font-size: 1.5em;
     color: #F8F4F9;
     text-decoration: none;
   }
+  /* ***** END HEADER - L ***** */
 
-
-
-
+  /* ***** START TEXT - L ***** */
   .homeTitle {
     grid-column: 1 / span 5;
     text-align: center;
+    font-size:3em;
   }
 
   .homeSubtitle {
     grid-column: 2 / 5;
     text-align: center;
     grid-row: 2;
+    font-size:1.5em;
   }
 
   .homeParagraph {
     grid-column: 1 / span 5;
-    text-align: center;
     grid-row: 3;
-    color: #2D3047;
+    font-size:1.2em;
   }
-
+  /* ***** END TEXT - L ***** */
+  /* ***** START ICONS - L ***** */
   #icon1 {
     grid-column: 2;
     text-align: center;
@@ -510,8 +531,8 @@ body {
     text-align: center;
     grid-row: 4;
   }
-
-
+  /* ***** END ICONS - L ***** */
+  /* ***** START SUBITLES - L ***** */
   #heuristics {
     grid-row: 4;
     grid-column: 2;
@@ -531,15 +552,18 @@ body {
     text-align: center;
     padding-bottom: 2em;
   }
-
+  /* ***** END SUBITLES - L ***** */
+  
+  /* ***** START FOOTER - L ***** */
   .imageCredits {
     grid-column: 1;
     text-align: center;
-
   }
 
   .feedback {
     grid-column: 2;
     text-align: center;
   }
+  /* ***** END FOOTER - L ***** */
 }
+/* ***** END OF PAGE - L ***** */
