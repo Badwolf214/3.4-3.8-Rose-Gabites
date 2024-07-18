@@ -1,3 +1,4 @@
+/* ****** START UNIVERSAL STYLES ****** */
 html,
 body {
   height: 100vh;
@@ -57,9 +58,69 @@ body {
   font-style:italic;
 }
 
+.creditsTitle {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #2589BD;
+}
 
 
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+}
 
+#openModal {
+  background-color:#2D3047;
+  font-size:1.5em;
+  text-decoration:underline;
+  font-family:Open Sans, sans-serif;
+  border: none;
+  color: #F8F4F9;
+  padding:1em;
+}
+
+#openModal:hover {
+  color: #E6AF2E;
+  text-decoration:italic;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #F8F4F9;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  font-family:"Source Sans", sans-serif;
+  color:#2D3047;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* ****** END UNIVERSAL STYLES ****** */
 
 /* ****** SMALL SCREEN Max width: 600px****** */
 /* *** START GRID LAYOUT - S *** */
@@ -236,47 +297,8 @@ body {
 /* *** END SUBTITLES - S *** */
 
 /* ***  START FOOTER - S *** */
-.feedback {
-  grid-column: 2;
-  text-align: center;
-}
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-}
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 /* ***  END FOOTER - S *** */
 
 /* ***  END PAGE - S *** */
@@ -426,11 +448,6 @@ body {
     text-align: center;
   }
 
-  .feedback {
-    grid-column: 2;
-    background-color: rosybrown;
-    text-align: center;
-  }
 
 }
 
@@ -560,10 +577,6 @@ body {
     text-align: center;
   }
 
-  .feedback {
-    grid-column: 2;
-    text-align: center;
-  }
   /* ***** END FOOTER - L ***** */
 }
 /* ***** END OF PAGE - L ***** */
