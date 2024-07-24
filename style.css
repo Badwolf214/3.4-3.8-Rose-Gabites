@@ -17,6 +17,7 @@ body {
   align-items: center;
   color: #F8F4F9;
 }
+
 .homeTitle {
   padding-bottom: 0;
   font-family: "Orbitron", sans-serif;
@@ -24,8 +25,9 @@ body {
   font-weight: 500;
   font-style: normal;
   color: #2589BD;
-  text-align:center;
+  text-align: center;
 }
+
 .homeSubtitle {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -49,13 +51,14 @@ body {
   font-style: normal;
   font-size: 1.2em;
   color: #2D3047;
-  margin-top:10em;
-  padding:0px;
+  margin-top: 10em;
+  padding: 0px;
 }
 
-.iconText:hover, .iconCircle:hover  {
+.iconText:hover,
+.iconCircle:hover {
   color: #2589BD;
-  font-style:italic;
+  font-style: italic;
 }
 
 .creditsTitle {
@@ -81,18 +84,18 @@ body {
 }
 
 #openModal {
-  background-color:#2D3047;
-  font-size:1.5em;
-  text-decoration:underline;
-  font-family:Open Sans, sans-serif;
+  background-color: #2D3047;
+  font-size: 1.5em;
+  text-decoration: underline;
+  font-family: Open Sans, sans-serif;
   border: none;
   color: #F8F4F9;
-  padding:1em;
+  padding: 1em;
 }
 
 #openModal:hover {
   color: #E6AF2E;
-  text-decoration:italic;
+  text-decoration: italic;
 }
 
 /* Modal Content/Box */
@@ -102,8 +105,8 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  font-family:"Source Sans", sans-serif;
-  color:#2D3047;
+  font-family: "Source Sans", sans-serif;
+  color: #2D3047;
 }
 
 /* The Close Button */
@@ -120,6 +123,7 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
 /* ****** END UNIVERSAL STYLES ****** */
 
 /* ****** SMALL SCREEN Max width: 600px****** */
@@ -135,27 +139,11 @@ body {
     background-color: #2D3047;
     padding: 0.5em;
   }
-
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 0.25fr 1fr 1fr 1fr 1fr;
-    place-items: start center;
-    background-color: #F8F4F9;
-  }
-
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    text-align: center;
-    place-items: center;
-    background-color: #2D3047;
-  }
-  /* *** END GRID LAYOUT - S *** */
-  
   /* *** START HEADER - S *** */
-  .navLink /* regular link style */{
+  .navLink
+
+  /* regular link style */
+    {
     display: grid;
     font-family: "Share Tech", sans-serif;
     text-decoration: none;
@@ -168,7 +156,10 @@ body {
 
   }
 
-  .navLink:hover/* link on hover */ {
+  .navLink:hover
+
+  /* link on hover */
+    {
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -179,119 +170,146 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 
-    .navLink>i /* icon on hover */{
+    .navLink>i
+    /* icon on hover */
+      {
       font-size: 2.5em;
       color: #E6AF2E;
       text-decoration: none;
     }
   }
 
-  .navlink>i /* regular icon style */{
+  .navlink>i
+  /* regular icon style */
+    {
     font-size: 1.5em;
     color: #F8F4F9;
     text-decoration: none;
   }
   /* *** END HEADER - S *** */
-
-  /* *** START TEXT - S *** */
-  .homeTitle {
-    grid-column: 1/5;
-    grid-row: 1;
-    font-size: 2.5em;
-    padding-top: 0.75em;
+  
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 1fr 1fr 1fr 1fr;
+    place-items: start center;
+    background-color: #F8F4F9;
   }
 
-}
+    /* *** START TEXT - S *** */
+    .homeTitle {
+      grid-column: 1/5;
+      font-size: 2.5em;
+      padding-top: 0.75em;
+    }
 
-.homeSubtitle {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 2;
-}
+  }
 
-.homeParagraph {
-  grid-column: 1 / span 3;
-  grid-row: 3;
-  font-size: 1.2em;
-  padding: 1.5em;
-}
+  .homeSubtitle {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 2;
+  }
 
-/* *** END TEXT - S *** */
-
-/* *** START ICONS - S *** */
-.iconCircle:hover {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 4;
-  height: 9em;
-  width: 9em;
-  background-color: #2589BD;
-  align-content: center;
-  border-radius: 50%;
-
-}
-.iconCircle {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 4;
-  height: 9em;
-  width: 9em;
-  background-color: #E6AF2E;
-  align-content: center;
-  border-radius: 50%;
-}
-
-.iconCircle>i {
-  font-size: 4em;
-  color: #2D3047;
-  text-decoration: none;
-}
+  .homeParagraph {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    font-size: 1.2em;
+    padding: 1.5em;
+    
+  }
 
 
+  /* *** END TEXT - S *** */
 
-#icon1 {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 4;
-}
+  /* *** START ICONS - S *** */
+  .iconCircle:hover {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 4;
+    height: 9em;
+    width: 9em;
+    background-color: #2589BD;
+    align-content: center;
+    border-radius: 50%;
+
+  }
+
+  .iconCircle {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 4;
+    height: 9em;
+    width: 9em;
+    background-color: #E6AF2E;
+    align-content: center;
+    border-radius: 50%;
+  }
+
+  .iconCircle>i {
+    font-size: 4em;
+    color: #2D3047;
+    text-decoration: none;
+  }
 
 
-#icon2 {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 5;
-}
 
-#icon3 {
-  grid-column: 2;
-  text-align: center;
-  grid-row: 6;
-}
-
-/* *** END ICONS - S *** */
-
-/* ***  START SUBITLES - S *** */
+  #icon1 {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 4;
+  }
 
 
-#heuristics {
-  grid-row: 4;
-  grid-column: 2;
-  text-align: center;
+  #icon2 {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 5;
+  }
+
+  #icon3 {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 6;
+  }
+
+  /* *** END ICONS - S *** */
+
+  /* ***  START SUBITLES - S *** */
 
 
-}
+  Link {
+    grid-row: 4;
+    grid-column: 2;
+    text-align: center;
 
-#quiz {
-  grid-row: 5;
-  grid-column: 2;
-  text-align: center;
-}
 
-#links {
-  grid-row: 6;
-  grid-column: 2;
-  text-align: center;
-}
+  }
+
+  #quizLink {
+    grid-row: 5;
+    grid-column: 2;
+    text-align: center;
+  }
+
+  #linksLink {
+    grid-row: 6;
+    grid-column: 2;
+    text-align: center;
+  }
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #2D3047;
+  }
+
+  /* *** END GRID LAYOUT - S *** */
+
 
 
 /* *** END SUBTITLES - S *** */
@@ -341,7 +359,6 @@ body {
   /* *** END GRID LAYOUT - M *** */
 
   .navLink {
-    display: grid;
     font-family: "Share Tech", sans-serif;
     text-decoration: none;
     font-weight: 400;
@@ -352,7 +369,10 @@ body {
     font-size: 2.5em;
   }
 
-  .navLink:hover /* link on hover */{
+  .navLink:hover
+
+  /* link on hover */
+    {
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -391,7 +411,7 @@ body {
     margin: 0.5em;
   }
 
-  .homeParagraph {
+  .homeParagraph #home {
     grid-column: 1 / span 5;
     text-align: center;
     grid-row: 3;
@@ -420,8 +440,7 @@ body {
   }
 
 
-
-  #heuristics {
+   #home{
     grid-row: 4;
     grid-column: 1 / 3;
 
@@ -477,15 +496,19 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   /* *** END GRID LAYOUT - L *** */
 
   /* ***** START HEADER - L ***** */
   .navLink {
     font-size: 1.5em;
-    display:grid;
+    display: grid;
   }
 
-  .navLink:hover /* link on hover */{
+  .navLink:hover
+
+  /* link on hover */
+    {
     display: grid;
     font-family: "Share Tech", sans-serif;
     font-weight: 400;
@@ -496,39 +519,47 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 
-    i /* icons on hover */ {
+    i
+
+    /* icons on hover */
+      {
       font-size: 1.5em;
       color: #E6AF2E;
       text-decoration: none;
     }
   }
 
-  i /* regular icon styles */{
+  i
+
+  /* regular icon styles */
+    {
     font-size: 1.5em;
     color: #F8F4F9;
     text-decoration: none;
   }
+
   /* ***** END HEADER - L ***** */
 
   /* ***** START TEXT - L ***** */
   .homeTitle {
     grid-column: 1 / span 5;
     text-align: center;
-    font-size:3em;
+    font-size: 3em;
   }
 
   .homeSubtitle {
     grid-column: 2 / 5;
     text-align: center;
     grid-row: 2;
-    font-size:1.5em;
+    font-size: 1.5em;
   }
 
-  .homeParagraph {
+  .homeParagraph #home {
     grid-column: 1 / span 5;
     grid-row: 3;
-    font-size:1.2em;
+    font-size: 1.2em;
   }
+
   /* ***** END TEXT - L ***** */
   /* ***** START ICONS - L ***** */
   #icon1 {
@@ -548,29 +579,31 @@ body {
     text-align: center;
     grid-row: 4;
   }
+
   /* ***** END ICONS - L ***** */
   /* ***** START SUBITLES - L ***** */
-  #heuristics {
+  #heuristicsLink {
     grid-row: 4;
     grid-column: 2;
     padding-bottom: 2em;
   }
 
-  #quiz {
+  #quizLink {
     grid-row: 4;
     grid-column: 3;
     text-align: center;
     padding-bottom: 2em;
   }
 
-  #links {
+  #linksLink {
     grid-row: 4;
     grid-column: 4;
     text-align: center;
     padding-bottom: 2em;
   }
+
   /* ***** END SUBITLES - L ***** */
-  
+
   /* ***** START FOOTER - L ***** */
   .imageCredits {
     grid-column: 1;
@@ -579,4 +612,11 @@ body {
 
   /* ***** END FOOTER - L ***** */
 }
+
 /* ***** END OF PAGE - L ***** */
+#heuristicsParagraph {
+  grid-row:2;
+  grid-column: 1 / span 5;
+  font-size: 1.2em;
+  padding: 1.5em;
+}
