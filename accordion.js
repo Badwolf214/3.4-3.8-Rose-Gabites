@@ -1,9 +1,9 @@
+
 const quickViewButtons = document.querySelectorAll('[data-quick-view]');
 const closeButtons = document.querySelectorAll('[data-close]');
 const fullwidthCards = document.querySelectorAll('.fullwidth');
-let toggle; // Quick view <button>
-let toggleParent;
-let toggleOpen;// <li>.
+let toggle; // Quick view <button>.
+let toggleParent; // <li>.
 let fullwidth; // Fullwidth card to be "injected".
 
 const openQuickView = (toggle, toggleParent, fullwidth) => {
@@ -25,7 +25,7 @@ quickViewButtons.forEach(quickView => {
     // Add appropriate ARIA attributes for "toggle" behaviour.
     fullwidth = quickView.parentElement.nextElementSibling;
     quickView.setAttribute('aria-expanded', 'false');
-    quickView.setAttribute('aria-controls', fullwidth.id);
+    quickView.setAttribute('aria-controls', fullwidth);
 
     quickView.addEventListener('click', (e) => {
         toggle = e.target;
@@ -37,15 +37,16 @@ quickViewButtons.forEach(quickView => {
             // Do we have another fullwidth card already open? If so, close it.
             fullwidthCards.forEach(fullwidthOpen => {
                 if (!fullwidthOpen.classList.contains('is-hidden')) {
-                    toggleParent = fullwidthOpen.previousElementSibling;
-                    toggleOpen = toggleParent.querySelector(
+                    toggleParentOpen =
+                        fullwidthOpen.previousElementSibling;
+                    toggleOpen = toggleParentOpen.querySelector(
                         '[data-quick-view]'
                     );
 
-                    closeQuickView(toggleOpen, toggleParent, fullwidthOpen);
+                    closeQuickView(toggleOpen, toggleParentOpen, fullwidthOpen);
                 }
             });
-
+            debugger;
             openQuickView(toggle, toggleParent, fullwidth);
         } else {
             closeQuickView(toggle, toggleParent, fullwidth);
