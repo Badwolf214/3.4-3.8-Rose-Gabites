@@ -6,6 +6,7 @@ body {
   margin: 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  color: #F8F4F9;
 }
 
 
@@ -530,7 +531,6 @@ body {
   }
 
   .navLink:hover
-
   /* link on hover */
     {
     display: grid;
@@ -543,20 +543,14 @@ body {
     font-size: 1.5em;
     cursor: pointer;
 
-    i
-
-    /* icons on hover */
-      {
+    i {
       font-size: 1.5em;
       color: #E6AF2E;
       text-decoration: none;
     }
   }
 
-  i
-
-  /* regular icon styles */
-    {
+  i {
     font-size: 1.5em;
     color: #F8F4F9;
     text-decoration: none;
@@ -660,7 +654,7 @@ ul[class] li > * {
 }
 
 :focus {
-  box-shadow: 0 0 0 0.25rem #2D3047;
+  box-shadow: 0 0 0 0.25rem #e6af2e;
   outline: 0;
 }
 
@@ -676,8 +670,10 @@ ul[class] li > * {
 
 .grid > * {
   align-items: flex-start;
-  background: #eee;
+  background-color:#2D3047;
   display: flex;
+  color:#F8F4F9;
+
   flex-direction: column;
   height: 100%;
 }
@@ -693,13 +689,35 @@ ul[class] li > * {
 
 .fullwidth,
 .is-selected {
-  background: wheat;
+  background-color:#F8F4F9;
+  color:#2D3047;
+  font-family: "Titillium Web", sans-serif;
+  border:0.2em #2D3047 solid;
+  .accordionTitle {
+    background-color:#F8F4F9;
+    color:#2D3047;
+  }
+
 }
 .listTitle {
-  font-family:Work Sans;
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 600;
+   font-style: normal;
   color:#F8F4F9;
 }
-button .moreInfoButton {
-  border:none;
-  color:#F8F4F9
+
+li > button{
+  background-color:#E6AF2E;
+  font-family:Work Sans, sans-serif;
+  color:#2D3047;
+  border:0px;
+  padding:0.5em;
+  font-size:1em;
+}
+.accordionTitle {
+   font-family: "Titillium Web", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+  color:#F8F4F9;
+  font-size:1.3em;
 }
