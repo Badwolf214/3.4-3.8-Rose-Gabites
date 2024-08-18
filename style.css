@@ -6,10 +6,15 @@ body {
   margin: 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  color: #F8F4F9;
 }
 
-
+.accordionLayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  grid-template-rows: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
+  padding: 0;
+  grid-auto-flow: dense;
+}
 
 .navlink {
   font-family: "Share Tech", sans-serif;
@@ -18,6 +23,7 @@ body {
   font-style: normal;
   justify-items: stretch;
   align-items: center;
+  display: grid;
   color: #F8F4F9;
 }
 
@@ -133,7 +139,7 @@ body {
 /* *** START GRID LAYOUT - S *** */
 @media only screen and (max-width: 600px) {
 
-  .header {
+  header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -308,7 +314,7 @@ body {
 }
 
 
-.footer {
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -333,7 +339,7 @@ body {
 /* ######## MEDIUM SCREEN Min width: 600px ######## */
 /* *** START GRID LAYOUT - M *** */
 @media only screen and (min-width:600px) {
-  .header {
+  header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -356,13 +362,13 @@ body {
     background-color: #F8F4F9;
   }
 
-  .footer {
+  footer {
     display: grid;
     justify-content: center;
     text-align: center;
     place-items: center;
     background-color: #2D3047;
-    grid-template-columns: 1fr 1fr;
+
   }
 
   /* *** END GRID LAYOUT - M *** */
@@ -376,6 +382,7 @@ body {
     align-items: center;
     color: #F8F4F9;
     font-size: 2.5em;
+    display: grid;
   }
 
   .navLink:hover
@@ -491,7 +498,7 @@ body {
 /* ****** LARGE SCREEN Min width: 1200px****** */
 /* *** START GRID LAYOUT - L *** */
 @media only screen and (min-width:1200px) {
-  .header {
+  header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -509,15 +516,9 @@ body {
 
   }
 
-  .accordionLayout {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 20rem);
-    grid-template-rows: 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr 0.25fr 1fr;
-    padding: 0;
-    grid-auto-flow: dense;
-  }
 
-  .footer {
+
+  footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -531,6 +532,7 @@ body {
   }
 
   .navLink:hover
+
   /* link on hover */
     {
     display: grid;
@@ -649,7 +651,7 @@ ul[class] li {
   list-style: none;
 }
 
-ul[class] li > * {
+ul[class] li>* {
   margin: 1rem;
 }
 
@@ -663,16 +665,18 @@ ul[class] li > * {
 .grid {
   display: grid;
   gap: 1rem;
-  grid-auto-flow: dense; /* [2] */
-  grid-template-columns: repeat(auto-fit, 35em); /* [1] */
+  grid-auto-flow: dense;
+  /* [2] */
+  grid-template-columns: repeat(auto-fit, 35em);
+  /* [1] */
   justify-content: center;
 }
 
-.grid > * {
+.grid>* {
   align-items: flex-start;
-  background-color:#2D3047;
+  background-color: #2D3047;
   display: flex;
-  color:#F8F4F9;
+  color: #F8F4F9;
 
   flex-direction: column;
   height: 100%;
@@ -689,35 +693,86 @@ ul[class] li > * {
 
 .fullwidth,
 .is-selected {
-  background-color:#F8F4F9;
-  color:#2D3047;
+  background-color: #F8F4F9;
+  color: #2D3047;
   font-family: "Titillium Web", sans-serif;
-  border:0.2em #2D3047 solid;
+  border: 0.2em #2D3047 solid;
+
   .accordionTitle {
-    background-color:#F8F4F9;
-    color:#2D3047;
+    background-color: #F8F4F9;
+    color: #2D3047;
   }
 
 }
+
 .listTitle {
-   font-family: "Titillium Web", sans-serif;
-   font-weight: 600;
-   font-style: normal;
-  color:#F8F4F9;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #F8F4F9;
 }
 
-li > button{
-  background-color:#E6AF2E;
-  font-family:Work Sans, sans-serif;
-  color:#2D3047;
-  border:0px;
-  padding:0.5em;
-  font-size:1em;
+button {
+  background-color: #E6AF2E;
+  font-family: Work Sans, sans-serif;
+  color: #2D3047;
+  border: 0px;
+  padding: 0.5em;
+  font-size: 1em;
 }
+
 .accordionTitle {
-   font-family: "Titillium Web", sans-serif;
-   font-weight: 600;
-   font-style: normal;
-  color:#F8F4F9;
-  font-size:1.3em;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #F8F4F9;
+  font-size: 1.3em;
+}
+
+.landscape {
+  width: 70%;
+  height: auto;
+}
+
+.portrait {
+  width: 30%;
+  height: auto;
+}
+
+
+.quizMain {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.quizTitle {
+  grid-column: 1/5;
+  font-size: 2.5em;
+  padding-top: 0.75em;
+
+}
+
+.quizSubtitle {
+  grid-row: 2;
+  grid-column: 1 / span 5;
+  font-size: 1.2em;
+  padding: 1.5em;
+}
+
+#quiz {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #2d3047;
+  grid-column: 2 / 4;
+}
+
+#question {
+  margin-bottom: 20px;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
 }

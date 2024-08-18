@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,500;1,500&display=swap"
         rel="stylesheet">
     <meta name="viewport" content="width=device-width">
-    <title>Home - HVHS Heuristics</title>
+    <title>Heuristics - HVHS Heuristics</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/d04ca93c21.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -20,7 +20,7 @@
 
 <body>
     <!-- ******* Beginning Of Header *******-->
-    <div class="header">
+    <header>
         <div class="homeNav"><a class="navLink" href="index.html" aria-hidden="false"><i
                     class="fa-solid fa-house fa-l"><br></i>Home</a></div>
         <div class="heuristicsNav"><a class="navLink" href="heuristics.html"><i
@@ -30,11 +30,12 @@
         <div class="linksNav"><a class="navLink" href="index.html"><i class="fa-solid fa-link"></i></i>Links</a>
         </div>
     </div>
+        </header>
     <!-- ******* End Of Header/Beginning Of Main ******-->
-    <main>
+    <div class="heuristicsMain">
 
         <h1 class="homeTitle">List Of Heuristics</h1>
-        <p class="homeParagraph" id="heuristicsParagraph">Here you will find an explanation of all 10
+        <h2 class="homeParagraph" id="heuristicsParagraph">Here you will find an explanation of all 10
             Heuristics, including examples relating to popular sites so you can see how exam answers
             are structured. Click on the modals to expand them and get more information. There are
             also embedded videos to help you learn. User Interface (UI) - The means by which the
@@ -45,7 +46,7 @@
             user wants to do with it and the user's environment, that decide the usability.
             User Experience (UX) - The overall experience of a person using a product such as a
             website or computer application, especially in terms of how easy or pleasing it is to
-            use.</p>
+            use.</h2>
 
 
 
@@ -55,7 +56,8 @@
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                <h3 class="quote">“The design should always keep users informed about what is going on, through appropriate feedback
+                <h3 class="quote">“The design should always keep users informed about what is going on, through
+                    appropriate feedback
                     within a reasonable amount of time.”</h3>
                 <p>
 
@@ -71,20 +73,22 @@
                     On the Woolworths website, when you add items to your shopping cart, a notification pops up showing
                     how many items you've added. This keeps you informed about what's in your cart at all times.
                 </p>
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages portrait" src="images/1-Visibility Of System Status.png"
+                    alt="An image of a chocolate bar. A notification reads:'3 in trolley' along with a green check mark.">
             </li>
 
             <li>
-                <p class="accordionTitle">Match between system and real world</p>
+                <p class="accordionTitle">Match Between System And Real World</p>
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
 
+
+
+                <h3 class="quote">“The design should speak the users' language. Use words, phrases, and concepts
+                    familiar to the user, rather than internal jargon. Follow real-world conventions, making information
+                    appear in a natural and logical order.”</h3>
                 <p>
-                    
-                    <h3 class="quote">“The design should speak the users' language. Use words, phrases, and concepts familiar to the user, rather than internal jargon. Follow real-world conventions, making information appear in a natural and logical order.”</h3>
                     In UX design, "Match Between the System and the Real World" means designing interfaces that use
                     familiar language, concepts, and workflows that users already understand from their real-world
                     experiences. This approach ensures that users can easily predict the system's behavior and
@@ -106,9 +110,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     check out. This increases the usability of the site, because the process is intuitive for the user.
                 </p>
 
-                </p<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages landscape" src="images/2-Match Between System And Real World.png"
+                    alt="The Woolworths navbar. Familar icons are next to user functions.">
                 <p></p>
             </li>
 
@@ -117,7 +120,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                <h3 class="quote">“Users often perform actions by mistake. They need a clearly marked "emergency exit" to leave the unwanted action without having to go through an extended process.”</h3>
+                <h3 class="quote">“Users often perform actions by mistake. They need a clearly marked "emergency exit"
+                    to leave the unwanted action without having to go through an extended process.”</h3>
 
                 <p>User Control and Freedom is a key principle in design that ensures users feel in charge of their
                     actions within a system. It emphasizes providing easy ways to undo actions, navigate freely, and
@@ -129,9 +133,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     mistakes without hassle.</p>
 
                 </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages landscape" src="images/3-User Control And Freedom.png"
+                    alt="A cart interface showing chocolate bars, with options to add or remove them.">
 
             <li>
                 <p class="accordionTitle">Consistency And Standards</p>
@@ -139,7 +142,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
             </li>
             <li class="fullwidth is-hidden">
 
-                <h3 class="quote">“Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.”</h3>
+                <h3 class="quote">“Users should not have to wonder whether different words, situations, or actions mean
+                    the same thing. Follow platform and industry conventions.”</h3>
                 <p>Consistency and Standards in design mean that users should encounter familiar elements and behaviors
                     across a website, making it easier to navigate and understand. This heuristic is crucial because it
                     reduces the learning curve and avoids confusion, as users can rely on established patterns. To
@@ -150,10 +154,9 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     relearn how each part of the site works.
                 </p>
 
-                </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+
+                <img class="heuristicsImages landscape" src="images/4-Consistency And Standards.png"
+                    alt="The Toyota site, which shows three different cars and the difference between them.">
 
 
             <li>
@@ -162,7 +165,9 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
             </li>
             <li class="fullwidth is-hidden">
 
-                <h3 class="quote">“Good error messages are important, but the best designs carefully prevent problems from occurring in the first place. Either eliminate error-prone conditions, or check for them and present users with a confirmation option before they commit to the action.”</h3>
+                <h3 class="quote">“Good error messages are important, but the best designs carefully prevent problems
+                    from occurring in the first place. Either eliminate error-prone conditions, or check for them and
+                    present users with a confirmation option before they commit to the action.”</h3>
                 <p>Error Prevention in design focuses on anticipating potential mistakes users might make and designing
                     the interface to help avoid these errors. This heuristic is essential because it saves users from
                     frustration and ensures a smoother, more reliable experience. Implementing error prevention can
@@ -174,10 +179,9 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     shopping experience.
                 </p>
 
-             
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+
+                <img class="heuristicsImages landscape" src="images/5-Error Prevention.png"
+                    alt="The cart page on the Paknsave Website, which shows information like cost and pickup location.">
 
 
             <li>
@@ -185,7 +189,10 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                <h3 class="quote">“Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design (e.g. field labels or menu items) should be visible or easily retrievable when needed.”</h3>
+                <h3 class="quote">“Minimize the user's memory load by making elements, actions, and options visible. The
+                    user should not have to remember information from one part of the interface to another. Information
+                    required to use the design (e.g. field labels or menu items) should be visible or easily retrievable
+                    when needed.”</h3>
 
                 <p>This UX design principle emphasizes making information and actions visible and easily accessible to
                     users. Instead of relying on users' memory to recall information, the interface should prompt
@@ -206,17 +213,18 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
 
 
                 </p>
-                
-               <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+
+                <img class="heuristicsImages landscape" src="images/6-Recognition Rather Than Recall.png"
+                    alt="The search function on the Trivago site, showing different results for a search of 'Disneyland'.">
 
             <li>
                 <p class="accordionTitle">Flexibility And Efficiency Of Use</p>
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                 <h3 class="quote">“Shortcuts — hidden from novice users — may speed up the interaction for the expert user so that the design can cater to both inexperienced and experienced users. Allow users to tailor frequent actions.”</h3>
+                <h3 class="quote">“Shortcuts — hidden from novice users — may speed up the interaction for the expert
+                    user so that the design can cater to both inexperienced and experienced users. Allow users to tailor
+                    frequent actions.”</h3>
 
                 <p>
                     This UX design principle focuses on providing options and features that accommodate both novice and
@@ -238,9 +246,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     it shows the keys next to the function.
 
                 </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages portrait" src="images/7-Flexibility And Efficiency Of Use.png"
+                    alt="The Google Docs menu, showing a list of common shortcuts such as cut, copy, and paste.">
 
             <li>
                 <p class="accordionTitle">Aesthetic And Minimalistic Design</p>
@@ -248,7 +255,9 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
             </li>
             <li class="fullwidth is-hidden">
 
-                <h3 class="quote">“Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit of information in an interface competes with the relevant units of information and diminishes their relative visibility.“</h3>
+                <h3 class="quote">“Interfaces should not contain information that is irrelevant or rarely needed. Every
+                    extra unit of information in an interface competes with the relevant units of information and
+                    diminishes their relative visibility.“</h3>
                 <p>
                     This principle focuses on creating interfaces that are visually appealing, uncluttered, and
                     streamlined. It aims to present information and functionality in a clear and concise manner,
@@ -265,9 +274,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
 
 
                 </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages landscape" src="images/8-Aesthetic And Minimalistic Design.png"
+                    alt="Several Products from the Woolworths Site, on a light background.">
 
 
             <li>
@@ -275,7 +283,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                 <h3 class="quote">“Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution.“</h3>
+                <h3 class="quote">“Error messages should be expressed in plain language (no error codes), precisely
+                    indicate the problem, and constructively suggest a solution.“</h3>
 
                 <p>
 
@@ -293,9 +302,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                     not only informs the user about the error but also guides them towards the necessary action to
                     resolve it.
                 </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages portrait" src="images/9-Recover From Errors.png"
+                    alt="A login screen for Trade Me. There is a notification of a missing at symbol.">
 
 
             <li>
@@ -303,7 +311,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
                 <button type="button" data-quick-view>More Info</button>
             </li>
             <li class="fullwidth is-hidden">
-                <h3 class="quote">“It’s best if the system doesn’t need any additional explanation. However, it may be necessary to provide documentation to help users understand how to complete their tasks.“</h3>
+                <h3 class="quote">“It’s best if the system doesn’t need any additional explanation. However, it may be
+                    necessary to provide documentation to help users understand how to complete their tasks.“</h3>
 
                 <p>
                     This UX design principle emphasizes providing users with accessible help resources and clear
@@ -323,15 +332,14 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
 
 
                 </p>
-                <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
-</iframe>
+                <img class="heuristicsImages landscape" src="images/10-Help and Documentation.png"
+                    alt="The help section on Woolworths, which has information about shopping online.">
         </ul>
         <br>
         <br>
 
 
-    </main>
+    </div>
 
 
 
@@ -339,7 +347,7 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
 
     <!--******* End Of Main/Beginning Of Footer *******-->
 
-    <div class="footer">
+    <footer>
 
         <button id="openModal">Site Credits/Feedback</button>
 
@@ -361,7 +369,8 @@ src="https://www.youtube.com/watch?v=Q8hp2IkI2es">
             </div>
 
         </div>
-    </div>
+    </footer>
+    
     <!--******* End Of Footer *******-->
     <script src="modal.js"></script>
     <script src="accordion.js"></script>

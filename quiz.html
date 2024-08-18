@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta
+        name="A landing page for an educational website aimed at teenagers, designed to teach Nielsen's 10 heuristics to students wanting good web design, and their teachers.">
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Work+Sans:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <title>Quiz - HVHS Heuristics</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/d04ca93c21.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+</head>
+
+<body>
+    <!-- ******* Beginning Of Header *******-->
+    <header>
+        <div class="homeNav"><a class="navLink" href="index.html" aria-hidden="false"><i
+                    class="fa-solid fa-house fa-l"><br></i>Home</a></div>
+        <div class="heuristicsNav"><a class="navLink" href="heuristics.html"><i
+                    class="fa-solid fa-list"></i>Heuristics</a></div>
+        <div class="quizNav"><a class="navLink" href="index.html"><i class="fa-solid fa-gamepad"></i>Quiz</a>
+        </div>
+        <div class="linksNav"><a class="navLink" href="index.html"><i class="fa-solid fa-link"></i></i>Links</a>
+        </div>
+    </header>
+    <main>
+    <div class="quizMain">
+        <h1 class="QuizTitle">Quiz</h1>
+        <h2 class="QuizSubtitle">Welcome to the quiz! Here are ten questions relating to the exam's content, and will be similar to what you might find on the test. There are ten multiple choice answers. Can you get them all right?</h2>
+          <div id="quiz">
+            <div id="question"></div>
+            <div id="options"></div>
+          </div>
+          </div>
+    </div>
+    </main>
+    <footer>
+
+        <button id="openModal">Site Credits/Feedback</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1 class="creditsTitle">Credits</h1>
+                <p>Designed by: Rose Gabites</p>
+                <p>Code By: Rose Gabites</p>
+                <p>Assets: Font Awesome, Woolworths, The Warehouse, More stuff here</p>
+                <br>
+                <p>Created for the 3.4 & 3.8 Web Development Project in 2024</p>
+                <a class="feedbackLink" href="https://forms.gle/cGuxpKATyTTZVAk69">Feedback/Questions (Opens an external
+                    link)</a> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+
+        </div>
+    </footer>
+    <!--******* End Of Footer *******-->
+    <script src="modal.js"></script>
+    <script src="accordion.js"></script>
+    <script src="quizCalc.js"></script>
+</body>
+
+</html>
