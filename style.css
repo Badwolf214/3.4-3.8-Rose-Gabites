@@ -27,7 +27,7 @@ body {
   color: #F8F4F9;
 }
 
-.homeTitle {
+.pageTitle {
   padding-bottom: 0;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -37,15 +37,9 @@ body {
   text-align: center;
 }
 
-.homeSubtitle {
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  color: #2D3047;
-}
 
-.homeParagraph {
+
+.pageParagraph {
   text-align: center;
   color: #1C4670;
   font-family: "Titillium Web", sans-serif;
@@ -212,7 +206,7 @@ body {
 
 
   /* *** START TEXT - S *** */
-  .homeTitle {
+  .pageTitle {
     grid-column: 1/5;
     font-size: 2.5em;
     padding-top: 0.75em;
@@ -220,13 +214,18 @@ body {
 
 }
 
-.homeSubtitle {
-  grid-column: 2;
+.pageSubtitle {
+  grid-column: 2 / 3;
   text-align: center;
   grid-row: 2;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #2D3047;
 }
 
-.homeParagraph {
+.pageParagraph {
   grid-column: 1 / span 5;
   grid-row: 3;
   font-size: 1.2em;
@@ -412,22 +411,26 @@ footer {
     text-decoration: none;
   }
 
-  .homeTitle {
+  .pageTitle {
     grid-column: 1 / 5;
     grid-row: 1;
     margin: 0;
     padding-top: 1em;
   }
 
-  .homeSubtitle {
+  
+  .pageSubtitle {
     grid-column: 2 / 4;
     text-align: center;
     grid-row: 2;
-    font-size: 2.5em;
-    margin: 0.5em;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #2D3047;
   }
 
-  .homeParagraph #home {
+  .pageParagraph #home {
     grid-column: 1 / span 5;
     text-align: center;
     grid-row: 3;
@@ -561,24 +564,31 @@ footer {
   /* ***** END HEADER - L ***** */
 
   /* ***** START TEXT - L ***** */
-  .homeTitle {
+  .pageTitle {
     grid-column: 1 / span 5;
     text-align: center;
     font-size: 3em;
   }
-
-  .homeSubtitle {
+  
+  .pageSubtitle {
     grid-column: 2 / 5;
     text-align: center;
     grid-row: 2;
-    font-size: 1.5em;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #2D3047;
   }
 
-  .homeParagraph #home {
+
+  .pageParagraph #home {
     grid-column: 1 / span 5;
     grid-row: 3;
     font-size: 1.2em;
   }
+
+
 
   /* ***** END TEXT - L ***** */
   /* ***** START ICONS - L ***** */
@@ -635,7 +645,14 @@ footer {
 }
 
 /* ***** END OF PAGE - L ***** */
-#heuristicsParagraph {
+#heuristicsParagraph  {
+  grid-row: 2;
+  grid-column: 1 / span 5;
+  font-size: 1.2em;
+  padding: 1.5em;
+}
+
+#quizParagraph {
   grid-row: 2;
   grid-column: 1 / span 5;
   font-size: 1.2em;
@@ -677,7 +694,6 @@ ul[class] li>* {
   background-color: #2D3047;
   display: flex;
   color: #F8F4F9;
-
   flex-direction: column;
   height: 100%;
 }
@@ -743,11 +759,11 @@ button {
 .quizMain {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr;
 }
 
 .quizTitle {
-  grid-column: 1/5;
+  grid-column: 1 / 5;
   font-size: 2.5em;
   padding-top: 0.75em;
 
@@ -760,19 +776,25 @@ button {
   padding: 1.5em;
 }
 
-#quiz {
+#quizContainer {
   margin: 0 auto;
   padding: 20px;
   background-color: #2d3047;
   grid-column: 2 / 4;
+  grid-row:3;
 }
 
 #question {
   margin-bottom: 20px;
+  color:#F8F4F9;
+  font-family:"Titillium Web", sans-serif;
+  font-size:1.5em;
 }
 
 #options {
   display: grid;
   gap: 10px;
+  margin:0.5em;
+  padding:2em;
   grid-template-columns: repeat(2, 1fr);
 }
