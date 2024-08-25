@@ -6,6 +6,7 @@ body {
   margin: 0px;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  background-color:#F8F4F9;
 }
 
 .accordionLayout {
@@ -27,7 +28,7 @@ body {
   color: #F8F4F9;
 }
 
-.homeTitle {
+.title {
   padding-bottom: 0;
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -45,7 +46,7 @@ body {
   color: #2D3047;
 }
 
-.homeParagraph {
+.paragraph {
   text-align: center;
   color: #1C4670;
   font-family: "Titillium Web", sans-serif;
@@ -200,7 +201,7 @@ body {
   }
 
   /* *** END HEADER - S *** */
-
+  /* *** START TEXT - S *** */
   .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -209,10 +210,7 @@ body {
     background-color: #F8F4F9;
   }
 
-
-
-  /* *** START TEXT - S *** */
-  .homeTitle {
+  .title {
     grid-column: 1/5;
     font-size: 2.5em;
     padding-top: 0.75em;
@@ -226,9 +224,9 @@ body {
   grid-row: 2;
 }
 
-.homeParagraph {
+.paragraph {
   grid-column: 1 / span 5;
-  grid-row: 3;
+  grid-row: 2;
   font-size: 1.2em;
   padding: 1.5em;
 
@@ -412,7 +410,7 @@ footer {
     text-decoration: none;
   }
 
-  .homeTitle {
+  .title {
     grid-column: 1 / 5;
     grid-row: 1;
     margin: 0;
@@ -427,7 +425,7 @@ footer {
     margin: 0.5em;
   }
 
-  .homeParagraph #home {
+  #homeParagraph {
     grid-column: 1 / span 5;
     text-align: center;
     grid-row: 3;
@@ -561,7 +559,7 @@ footer {
   /* ***** END HEADER - L ***** */
 
   /* ***** START TEXT - L ***** */
-  .homeTitle {
+  .title {
     grid-column: 1 / span 5;
     text-align: center;
     font-size: 3em;
@@ -574,7 +572,7 @@ footer {
     font-size: 1.5em;
   }
 
-  .homeParagraph #home {
+  .paragraph #home {
     grid-column: 1 / span 5;
     grid-row: 3;
     font-size: 1.2em;
@@ -742,12 +740,12 @@ button {
 
 .quizMain {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-.quizTitle {
-  grid-column: 1/5;
+.title {
+  grid-column: 2 / 5;
   font-size: 2.5em;
   padding-top: 0.75em;
 
@@ -764,7 +762,11 @@ button {
   margin: 0 auto;
   padding: 20px;
   background-color: #2d3047;
-  grid-column: 2 / 4;
+  color:#F8F4F9;
+  grid-column: 2 / 5;
+  font-family:Work Sans, sans-serif;
+  font-size:1.3em;
+  color:
 }
 
 #question {
